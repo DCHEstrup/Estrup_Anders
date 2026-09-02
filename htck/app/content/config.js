@@ -1,7 +1,7 @@
 var constants = {
   "config": {
-    "appTitle": "Historic Tale Construction Kit",
-    "appSub": "Bayeux",
+    "appTitle": "Gammel Estrups byg-selv-værktøj",
+    "appSub": "Vægtæpper",
     "repository":"https:/github.com/htck/bayeux",
     "authors": [
       {
