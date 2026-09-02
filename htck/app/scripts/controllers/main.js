@@ -110,7 +110,7 @@ function addImage (src, x, y){
     var size = hTools.getSizeOfImage(src);
 
     // Standardstørrelse for nye billeder
-    var imageScale = 0.4;
+    var imageScale = 0.2;
 
     var width = size.w * imageScale;
     var height = size.h * imageScale;
@@ -264,9 +264,11 @@ function addImage (src, x, y){
         $scope.backgroundDown = false;
       };
 
-      $scope.setBackground = function(imgUrl){
-        $scope.backgroundElement.attr({'fill':'url('+imgUrl+')', 'fill-opacity':'1', 'stroke':'none'});
-      };
+$scope.setBackground = function(imgUrl){
+  $scope.backgroundElement.attr({
+    src: imgUrl
+  });
+};
 
       // Drag & drop
 
@@ -444,9 +446,15 @@ function addImage (src, x, y){
         paper.setSize('100%', '100%');
         paper.canvas.setAttributeNS('http://www.w3.org/XML/1998/namespace', 'xml:space','preserve');
 
-        var background = $scope.paper.rect(0, 0, constants.W,constants.H);
-        background.attr({'fill':'url('+constants.backgrounds[0]+')', 'fill-opacity':'1', 'stroke':'none'});
-        $scope.initBackground(background);
+var background = $scope.paper.image(
+  constants.backgrounds[0],
+  0,
+  0,
+  constants.W,
+  constants.H
+);
+
+$scope.initBackground(background);
 
         $('#paper').mouseup($scope.paperUnfocus);
         $('#paper').mouseleave($scope.paperUnfocus);
