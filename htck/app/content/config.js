@@ -83,6 +83,7 @@ var constants = {
     },
   ],
   "backgrounds":[
+    "content/images/backgrounds/herregård1.jpg",
     "content/images/backgrounds/background_1.jpg",
     "content/images/backgrounds/background_2.jpg",
     "content/images/backgrounds/background_3.jpg",
