@@ -2,7 +2,9 @@
   "name": "htck",
   "private": true,
   "devDependencies": {
+    "bower": "^1.8.14",
     "grunt": "^0.4.5",
+    "grunt-cli": "^1.5.0",
     "grunt-angular-templates": "^0.5.7",
     "grunt-autoprefixer": "^2.0.0",
     "grunt-concurrent": "^1.0.0",
