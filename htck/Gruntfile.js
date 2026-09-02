@@ -464,7 +464,7 @@ module.exports = function (grunt) {
     'clean:dist',
     'wiredep',
     'useminPrepare',
-    'imagemin',
+    'concurrent:dist',
     'autoprefixer',
     'concat',
     'ngAnnotate',
