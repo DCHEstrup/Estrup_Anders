@@ -106,18 +106,28 @@ angular.module('htckApp').controller('MainCtrl', function ($scope, $timeout, $lo
       };
 
       // Adds an image as a raphael element from its url
-  		function addImage (src, x, y){
-  			var size = hTools.getSizeOfImage(src);
-        x=(x)?x:(constants.W - size.w)/2;
-        y=(y)?y:(constants.H - size.h)/2;
-        if(size.h === 0 || size.w === 0){
-          return;
-        }
-        $log.debug(size);
-  			var ie = $scope.paper.image(src, x, y, size.w, size.h);  // TODO
-  			return addElement(ie);
-  		}
+function addImage (src, x, y){
+    var size = hTools.getSizeOfImage(src);
 
+    // Standardstørrelse for nye billeder
+    var imageScale = 0.4;
+
+    var width = size.w * imageScale;
+    var height = size.h * imageScale;
+
+    x = (x !== undefined && x !== null) ? x : (constants.W - width) / 2;
+    y = (y !== undefined && y !== null) ? y : (constants.H - height) / 2;
+
+    if(size.h === 0 || size.w === 0){
+      return;
+    }
+
+    $log.debug(size);
+
+    var ie = $scope.paper.image(src, x, y, width, height);
+
+    return addElement(ie);
+}
       $scope.addImage = function(src, x, y){
         $scope.setBrush(undefined);
         addImage(src, x, y);
