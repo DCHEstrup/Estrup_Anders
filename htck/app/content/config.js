@@ -68,19 +68,17 @@ var constants = {
    {
       "title": "Landskab",
       "images": [
-        "content/images/buildings/01_tower.png",
-        "content/images/buildings/02_tower2.png",
-        "content/images/buildings/03_tower3.png",
-        "content/images/buildings/04_tower4.png",
-        "content/images/buildings/05_fort.png",
-        "content/images/buildings/06_castle_on_hill.png",
-        "content/images/buildings/07_house.png",
-        "content/images/buildings/08_archway.png",
-        "content/images/buildings/09_pillars.png",
-        "content/images/buildings/10_pillar.png",
-        "content/images/buildings/11_tower6.png",
-        "content/images/buildings/12_tower5.png",
-        "content/images/buildings/13_Arch.png",
+        "content/images/buildings/1forgrund.png",
+        "content/images/buildings/1landskab.png",
+        "content/images/buildings/1Skov.png",
+        "content/images/buildings/2forgrund.png",
+        "content/images/buildings/2landskab.png",
+        "content/images/buildings/2skov.png",
+        "content/images/buildings/3dyr.png",
+        "content/images/buildings/8landskab.png",
+        "content/images/buildings/9landskab.png",
+        "content/images/buildings/10landskab.png",
+        "content/images/buildings/11 landskab.png"
       ]
     },
    {
