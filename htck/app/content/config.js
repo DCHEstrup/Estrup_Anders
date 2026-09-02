@@ -32,7 +32,7 @@ var constants = {
   ],
   "tabs": [
    {
-      "title": "Braves",
+      "title": "Bygninger",
       "images": [
         "content/images/brave/01_archer1.png",
         "content/images/brave/02_archer2.png",
@@ -55,7 +55,7 @@ var constants = {
       ]
     },
    {
-      "title": "Beasts",
+      "title": "Dyr",
       "images": [
         "content/images/beasts/01_horse.png",
         "content/images/beasts/02_cow.png",
@@ -84,7 +84,7 @@ var constants = {
       ]
     },
    {
-      "title": "Buildings",
+      "title": "Landskab",
       "images": [
         "content/images/buildings/01_tower.png",
         "content/images/buildings/02_tower2.png",
