@@ -2,7 +2,7 @@ var constants = {
   "config": {
     "appTitle": "Gammel Estrups byg-selv-værktøj",
     "appSub": "Vægtæpper",
-    "repository":"https:/github.com/htck/bayeux",
+    "repository":"https://github.com/DCHEstrup/Estrup_Anders",
     "authors": [
       {
         "name": "LeonardA-L",
